@@ -1,0 +1,39 @@
+%!TEX root = main.tex
+
+\usepackage{graphicx}
+\usepackage{pslatex}
+\usepackage{apacite}
+\usepackage{natbib}
+\usepackage{bbm}
+\usepackage{amsfonts}
+\usepackage{caption}
+\usepackage{amsmath,amsthm,amssymb,amsfonts,bm}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{authblk}
+
+\input{commands}
+
+\usepackage{geometry}
+\geometry{
+    top=1in,
+    bottom=1in,
+    left=.8in,
+    right=.8in,
+    headheight=3ex,
+    headsep=3ex
+}
+
+\setcounter{secnumdepth}{0}  % no section numbers
+
+\renewenvironment{abstract}
+ {
+  \begin{center}
+  \bfseries\abstractname\vspace{-.5em}
+  \end{center}
+  \list{}{%
+    \setlength{\leftmargin}{20mm}
+    \setlength{\rightmargin}{\leftmargin}%
+  }%
+  \item\relax}
+ {\endlist}
